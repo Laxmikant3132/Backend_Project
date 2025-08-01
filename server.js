@@ -14,7 +14,10 @@ const app = express()
 //middleware
 app.use(express.json())
 app.use(cors({
-    origin: 'https://frontend-project-ten-sepia.vercel.app/',}))
+    origin: ['https://frontend-project-ten-sepia.vercel.app/',
+        'frontend-project-git-main-laxmikants-projects-32c6fea5.vercel.app',
+        'frontend-project-oh8o045f2-laxmikants-projects-32c6fea5.vercel.app'
+    ]}))
 
 
 //router
