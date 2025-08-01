@@ -14,7 +14,7 @@ const app = express()
 //middleware
 app.use(express.json())
 app.use(cors({
-    origin: 'https://frontende-commerce-five.vercel.app/',}))
+    origin: 'https://frontend-project-ten-sepia.vercel.app/',}))
 
 
 //router
