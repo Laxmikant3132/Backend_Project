@@ -3,7 +3,7 @@ console.log('JWT_SECRET VALUE:', process.env.JWT_SECRET);
 const express = require('express')
 const connectDB = require("./config/db")
 const errorHandler = require("./middleware/errorHandlerMiddleware")
-// const cors = require('cors')
+const cors = require('cors')
 
 //mongodb
 connectDB()
@@ -13,7 +13,8 @@ const app = express()
 
 //middleware
 app.use(express.json())
-// app.use(cors())
+app.use(cors({
+    origin: 'https://frontende-commerce-five.vercel.app/',}))
 
 
 //router
